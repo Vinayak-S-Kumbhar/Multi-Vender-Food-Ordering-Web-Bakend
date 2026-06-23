@@ -1,0 +1,25 @@
+package com.example.Multi.Vender.Food.Order.Web.Dtos;
+
+import com.example.Multi.Vender.Food.Order.Web.config.OrderStatus;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Getter
+@Setter
+@Builder
+public class OrderRespForOwner {
+    private long orderId;
+    private long restorentId;
+    private long userId;
+    private String customerName;
+    private String venderName;
+    private List<OrderItemsDto> orderItems;
+    private double totalAmount;
+    private OrderStatus orderStatus;
+    private LocalDateTime time;
+    private String city;
+}
