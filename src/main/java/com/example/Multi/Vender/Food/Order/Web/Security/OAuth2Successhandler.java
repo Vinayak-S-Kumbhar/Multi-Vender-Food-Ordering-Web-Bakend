@@ -58,7 +58,7 @@ public class OAuth2Successhandler implements AuthenticationSuccessHandler {
 
         response.addCookie(cookie);
         response.sendRedirect(
-                "https://multi-vendor-food-ordering-web-fron.vercel.app/oauth-success" +
+                "https://multi-vender-food-ordering-web-fron.vercel.app/oauth-success" +
                         "?token=" + accessToken +
                         "&userId=" + user.getId() +
                         "&role=" + user.getUserRole()

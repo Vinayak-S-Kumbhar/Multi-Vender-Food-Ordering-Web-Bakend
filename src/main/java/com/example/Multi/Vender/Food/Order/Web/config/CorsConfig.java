@@ -17,11 +17,16 @@ public class CorsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOriginPatterns(List.of(
-                "https://multi-vendor-food-ordering-web-fron.vercel.app"
+                "https://multi-vender-food-ordering-web-fron.vercel.app"
         ));
 
         configuration.setAllowedMethods(List.of(
-                "GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE",
+                "PATCH",
+                "OPTIONS"
         ));
 
         configuration.setAllowedHeaders(List.of("*"));
