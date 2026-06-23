@@ -35,15 +35,6 @@ public class FoodItemControler {
         return ResponseEntity.status(HttpStatus.CREATED).body(foodItemService.addFoodItem(foodname,description,foodCategery,foodType,price,restorentId,file));
     }
 
-//    @GetMapping("/public/FoodItem/image/{id}")
-//    public ResponseEntity<byte[]> getImage(@PathVariable Long id) {
-//        FoodItem item = foodItemRepository.findById(id)
-//                .orElseThrow(() -> new RuntimeException("Not found"));
-//
-//        return ResponseEntity.ok()
-//                .contentType(MediaType.IMAGE_JPEG)
-//                .body(item.getImage());
-//    }
 
     @GetMapping("/public/FoodItem/list")
     public ResponseEntity<List<FoodItemResDto>> getAllFoodItems(@RequestParam(defaultValue = "0") int page,

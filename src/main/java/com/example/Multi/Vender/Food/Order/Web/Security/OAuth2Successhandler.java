@@ -57,9 +57,8 @@ public class OAuth2Successhandler implements AuthenticationSuccessHandler {
         cookie.setMaxAge(7 * 24 * 60 * 60);
 
         response.addCookie(cookie);
-
         response.sendRedirect(
-                "http://localhost:5173/oauth-success" +
+                "https://multi-vendor-food-ordering-web-fron.vercel.app/oauth-success" +
                         "?token=" + accessToken +
                         "&userId=" + user.getId() +
                         "&role=" + user.getUserRole()

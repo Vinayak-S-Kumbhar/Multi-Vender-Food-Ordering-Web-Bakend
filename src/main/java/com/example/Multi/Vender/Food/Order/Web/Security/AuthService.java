@@ -51,7 +51,7 @@ public ResponseEntity<LoginResponceDto> Login(
     Cookie cookie = new Cookie("refreshToken", refreshToken);
 
     cookie.setHttpOnly(true);
-    cookie.setSecure(false); // true in production HTTPS
+    cookie.setSecure(true); // true in production HTTPS
     cookie.setPath("/");
     cookie.setMaxAge(7 * 24 * 60 * 60);
 

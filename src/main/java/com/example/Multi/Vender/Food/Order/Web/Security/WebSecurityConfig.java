@@ -48,7 +48,7 @@ public class WebSecurityConfig {
 
                             exception.printStackTrace();
 
-                            response.sendRedirect("http://localhost:5173/login");
+                            response.sendRedirect("https://multi-vendor-food-ordering-web-fron.vercel.app/login");
                         })
                 )
 
