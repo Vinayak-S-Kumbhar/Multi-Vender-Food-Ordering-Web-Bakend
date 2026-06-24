@@ -17,7 +17,8 @@ public class CorsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOriginPatterns(List.of(
-                "https://multi-vender-food-ordering-web-fron.vercel.app"
+                "https://multi-vender-food-ordering-web-fron.vercel.app",
+                "http://localhost:5173"
         ));
 
         configuration.setAllowedMethods(List.of(
